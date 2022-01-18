@@ -13,7 +13,7 @@ export class Success extends Component {
   continue = (e) => {
     e.preventDefault();
     //get registeredUser data
-    Axios.get("http://localhost:3001/api/get").then((response) => {
+    Axios.get("http://13.127.52.110:3001/api/get").then((response) => {
       this.setState({
         items: response.data,
         DataisLoaded: true,
