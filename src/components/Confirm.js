@@ -10,7 +10,7 @@ export class Confirm extends Component {
   continue = (e) => {
     e.preventDefault();
     // PROCESS FORM //
-    Axios.post("http://13.127.52.110:3001/api/insert", {
+    Axios.post("http://localhost:3001/api/insert", {
       firstName: this.props.values.firstName,
       lastName: this.props.values.lastName,
       email: this.props.values.email,
